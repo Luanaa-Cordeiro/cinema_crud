@@ -6,6 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulário com Tailwind CSS</title>
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+     input{
+      margin: 10px 0;
+    }
+
+  </style>
 </head>
 <body class="bg-gray-100">
 
