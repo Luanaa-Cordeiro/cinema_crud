@@ -22,7 +22,6 @@
 
 </style>
 
-
 <div class="mostrar">
 <h1>Comida selecionada - {{$comida->nome}}</h1>
 <form action="{{ route('comidas.destroy', ['comida' => $comida->id]) }}" method="post">
