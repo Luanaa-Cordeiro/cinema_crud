@@ -71,11 +71,17 @@
 </html>
 
 <script>
-  const closeButton = document.getElementById('close-alert');
-  const alertBox = document.getElementById('alert');
+  // Seleciona todos os botões de fechar (com a classe "fill-current") e os alerta
+  const closeButtons = document.querySelectorAll('.fill-current');
 
-  closeButton.addEventListener('click', () => {
-    alertBox.style.display = 'none'; 
+  closeButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      // Encontra o alerta mais próximo do botão de fechar e o oculta
+      const alertBox = button.closest('.bg-red-100');
+      if (alertBox) {
+        alertBox.style.display = 'none'; 
+      }
+    });
   });
 </script>
 </x-app-layout>
