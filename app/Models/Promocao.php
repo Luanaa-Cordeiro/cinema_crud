@@ -8,5 +8,7 @@ class Promocao extends Model
 {
     protected $fillable = [
         'disponiveis',
+        'valor_atual',
+        'valor_promocao',
     ];
 }

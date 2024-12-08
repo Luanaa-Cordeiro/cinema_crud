@@ -37,6 +37,8 @@ class PromocaoController extends Controller
     {
         $created = $this->promocao->create([
             'disponiveis' => $request->input('disponiveis'), 
+            'valor_atual' => $request->input('valor_atual'), 
+            'valor_promocao' => $request->input('valor_promocao'), 
         ]);
 
         if($created){
@@ -81,7 +83,7 @@ class PromocaoController extends Controller
      */
     public function destroy(string $id)
     {
-        $this->genero->where('id',$id)->delete();
+        $this->promocao->where('id',$id)->delete();
 
        return redirect()->route('promocoes.index')->with('message','Deletado com sucesso');
     }

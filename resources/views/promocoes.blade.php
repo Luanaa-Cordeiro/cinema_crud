@@ -91,7 +91,7 @@ font-weight:700;
                 {{$promocao->disponiveis}}
                 </td>
                 <td class="px-6 py-4">
-                {{$promocao->atual}}
+                {{$promocao->valor_atual}}
                 </td>
                 <td class="px-6 py-4">
                 {{$promocao->valor_promocao}}
