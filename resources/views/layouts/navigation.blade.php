@@ -24,8 +24,8 @@
                 </div>
 
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('promocao.index')" :active="request()->routeIs('genero')" style="color:white;">
-                        {{ __('Gêneros') }}
+                    <x-nav-link :href="route('promocoes.index')" :active="request()->routeIs('promocao')" style="color:white;">
+                        {{ __('Promoções') }}
                     </x-nav-link>
                 </div>
             </div>

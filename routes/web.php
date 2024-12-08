@@ -30,13 +30,13 @@ Route::put('/generos/{genero}', [GeneroController::class, 'update'])->middleware
 Route::delete('/generos/{genero}', [GeneroController::class, 'destroy'])->middleware(['auth', 'verified'])->name('generos.destroy');
 
 //promoções
-Route::get('/promocoes', [GeneroController::class, 'index'])->middleware(['auth', 'verified'])->name('promocoes.index');
-Route::get('/promocoes/create', [GeneroController::class, 'create'])->middleware(['auth', 'verified'])->name('promocoes.create');
-Route::post('/promocoes', [GeneroController::class, 'store'])->middleware(['auth', 'verified'])->name('promocoes.store');
-Route::get('/promocoes/{genero}', [GeneroController::class, 'show'])->middleware(['auth', 'verified'])->name('promocoes.show');
-Route::get('/promocoes/{genero}/edit', [GeneroController::class, 'edit'])->middleware(['auth', 'verified'])->name('promocoes.edit');
-Route::put('/promocoes/{genero}', [GeneroController::class, 'update'])->middleware(['auth', 'verified'])->name('promocoes.update');
-Route::delete('/promocoes/{genero}', [GeneroController::class, 'destroy'])->middleware(['auth', 'verified'])->name('promocoes.destroy');
+Route::get('/promocoes', [PromocaoController::class, 'index'])->middleware(['auth', 'verified'])->name('promocoes.index');
+Route::get('/promocoes/create', [PromocaoController::class, 'create'])->middleware(['auth', 'verified'])->name('promocoes.create');
+Route::post('/promocoes', [PromocaoController::class, 'store'])->middleware(['auth', 'verified'])->name('promocoes.store');
+Route::get('/promocoes/{genero}', [PromocaoController::class, 'show'])->middleware(['auth', 'verified'])->name('promocoes.show');
+Route::get('/promocoes/{genero}/edit', [PromocaoController::class, 'edit'])->middleware(['auth', 'verified'])->name('promocoes.edit');
+Route::put('/promocoes/{genero}', [PromocaoController::class, 'update'])->middleware(['auth', 'verified'])->name('promocoes.update');
+Route::delete('/promocoes/{genero}', [PromocaoController::class, 'destroy'])->middleware(['auth', 'verified'])->name('promocoes.destroy');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
