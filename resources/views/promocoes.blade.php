@@ -78,7 +78,6 @@ font-weight:700;
                 <th scope="col" class="px-6 py-3"style="background-color:#590202; color:white;">Nome</th>
                 <th scope="col" class="px-6 py-3"style="background-color:#590202; color:white;">Valor Atual</th>
                 <th scope="col" class="px-6 py-3"style="background-color:#590202; color:white;">Valor Promoção</th>
-                <th scope="col" class="px-6 py-3"style="background-color:#590202; color:white;">Válido Até</th>
                 <th scope="col" class="px-6 py-3" style="background-color:#590202; color:white;" id='ação'>Ações</th>
             </tr>
         </thead>
