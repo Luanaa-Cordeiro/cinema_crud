@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use App\Models\Comida;
 use Illuminate\Http\Request;
-use App\Http\Requests\ComidaRequest;
+use App\Http\Requests\StoreComida;
 
 class ComidaController extends Controller
 {
@@ -33,7 +33,7 @@ class ComidaController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(StoreComida $request)
     {
         $created = $this->comida->create([
             'nome' => $request->input('nome'), 
@@ -66,7 +66,7 @@ class ComidaController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(StoreComida $request, string $id)
     {
         $updated = $this->comida->where('id', $id)->update($request->except(['_token','_method']));
 
