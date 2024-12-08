@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use App\Models\Promocao;
 use Illuminate\Http\Request;
-use App\Http\Requests\PromocaoRequest;
+use App\Http\Requests\StorePromocao;
 
 class PromocaoController extends Controller
 {
@@ -33,7 +33,7 @@ class PromocaoController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(StorePromocao $request)
     {
         $created = $this->promocao->create([
             'disponiveis' => $request->input('disponiveis'), 
@@ -63,11 +63,10 @@ class PromocaoController extends Controller
     {
         return view('promocao_edit', ['promocao' => $promocao]);
     }
-
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(StorePromocao $request, string $id)
     {
         $updated = $this->promocao->where('id', $id)->update($request->except(['_token','_method']));
 
