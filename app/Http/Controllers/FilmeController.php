@@ -49,6 +49,8 @@ class FilmeController extends Controller
     {
         $created = $this->filme->create([
             'nome' => $request->input('nome'), 
+            'classificacao' => $request->input('classificacao'), 
+            'ano' => $request->input('ano'), 
             'id_genero' => $request->input('id_genero'), 
         ]);
 
@@ -64,7 +66,7 @@ class FilmeController extends Controller
      */
     public function show(Filme $filme)
     {
-        return view('filme_show',['filmes' => $filme]);
+        return view('filme_show',['filme' => $filme]);
     }
 
     /**
@@ -73,7 +75,7 @@ class FilmeController extends Controller
     public function edit(Filme $filme)
     {
         $generos = Genero::all();
-        return view('filme_edit', ['filmes' => $filme], ['generos' => $generos]);
+        return view('filme_edit', ['filme' => $filme], ['generos' => $generos]);
     }
 
     /**
@@ -81,7 +83,7 @@ class FilmeController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        $updated = $this->album->where('id', $id)->update($request->except(['_token','_method']));
+        $updated = $this->filme->where('id', $id)->update($request->except(['_token','_method']));
 
         if($updated){
             return redirect()->route('filmes.index')->with('message','Atualizado com sucesso');

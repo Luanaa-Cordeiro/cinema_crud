@@ -51,7 +51,7 @@ font-weight:700;
 
     <div class="table_itens">
     <h1>Filmes!</h1>
-<a href="{{route('generos.create')}}"><button>Adicione aqui</button></a>
+<a href="{{route('filmes.create')}}"><button>Adicione aqui</button></a>
 </div>
 
 <div class="alerta">
@@ -76,6 +76,9 @@ font-weight:700;
             <tr>
                 <th scope="col" class="px-6 py-3"style="background-color:#590202; color:white;">Id</th>
                 <th scope="col" class="px-6 py-3"style="background-color:#590202; color:white;">Nome</th>
+                <th scope="col" class="px-6 py-3"style="background-color:#590202; color:white;">Classificação</th>
+                <th scope="col" class="px-6 py-3"style="background-color:#590202; color:white;">Ano</th>
+                <th scope="col" class="px-6 py-3"style="background-color:#590202; color:white;">Gênero</th>
                 <th scope="col" class="px-6 py-3" style="background-color:#590202; color:white;" id='ação'>Ações</th> 
             </tr>
         </thead>
@@ -87,6 +90,15 @@ font-weight:700;
                 </td>
                 <td class="px-6 py-4">
                 {{$filme->nome}}
+                </td>
+                <td class="px-6 py-4">
+                {{$filme->classificacao}}
+                </td>
+                <td class="px-6 py-4">
+                {{$filme->ano}}
+                </td>
+                <td class="px-6 py-4">
+                {{$filme->genero->nome}}
                 </td>
                 <td id='botões' class="px-6 py-4">
                 <a href="{{ route('filmes.edit', ['filme' => $filme->id]) }}"><button id="editar">Editar</button></a>
