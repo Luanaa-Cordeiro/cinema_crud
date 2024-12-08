@@ -21,7 +21,7 @@
         </div>
         <div class="mb-4">
         </div>
-        <button type="submit" class="w-full bg-red-700 text-white py-2 rounded-lg hover:bg-red-900 transition duration-200">Cadastrar</button>
+        <button type="submit" class="w-full bg-red-900 text-white py-2 rounded-lg">Editar</button>
         <a href="{{ route('comidas.index')}}"><button data-mdb-ripple-init type="button" id="criar" class="w-full py-2 rounded-lg transition duration-200">Voltar</button></a>
       </form>
     </div>
