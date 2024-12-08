@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Filme; 
 use App\Models\Genero; 
+use App\Http\Requests\StoreFilme;
 
 class FilmeController extends Controller
 {
@@ -45,7 +46,7 @@ class FilmeController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(StoreFilme $request)
     {
         $created = $this->filme->create([
             'nome' => $request->input('nome'), 
@@ -81,7 +82,7 @@ class FilmeController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(StoreFilme $request, string $id)
     {
         $updated = $this->filme->where('id', $id)->update($request->except(['_token','_method']));
 
