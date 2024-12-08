@@ -86,7 +86,7 @@ font-weight:700;
                 {{$promocao->id}}
                 </td>
                 <td class="px-6 py-4">
-                {{$promocao->nome}}
+                {{$promocao->disponiveis}}
                 </td>
                 <td id='botões' class="px-6 py-4">
                 <a href="{{ route('promocoes.edit', ['promocao' => $promocao->id]) }}"><button id="editar">Editar</button></a>

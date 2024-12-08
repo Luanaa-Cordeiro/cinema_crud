@@ -36,7 +36,7 @@ class PromocaoController extends Controller
     public function store(Request $request)
     {
         $created = $this->promocao->create([
-            'nome' => $request->input('nome'), 
+            'disponiveis' => $request->input('disponiveis'), 
         ]);
 
         if($created){

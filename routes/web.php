@@ -33,10 +33,10 @@ Route::delete('/generos/{genero}', [GeneroController::class, 'destroy'])->middle
 Route::get('/promocoes', [PromocaoController::class, 'index'])->middleware(['auth', 'verified'])->name('promocoes.index');
 Route::get('/promocoes/create', [PromocaoController::class, 'create'])->middleware(['auth', 'verified'])->name('promocoes.create');
 Route::post('/promocoes', [PromocaoController::class, 'store'])->middleware(['auth', 'verified'])->name('promocoes.store');
-Route::get('/promocoes/{genero}', [PromocaoController::class, 'show'])->middleware(['auth', 'verified'])->name('promocoes.show');
-Route::get('/promocoes/{genero}/edit', [PromocaoController::class, 'edit'])->middleware(['auth', 'verified'])->name('promocoes.edit');
-Route::put('/promocoes/{genero}', [PromocaoController::class, 'update'])->middleware(['auth', 'verified'])->name('promocoes.update');
-Route::delete('/promocoes/{genero}', [PromocaoController::class, 'destroy'])->middleware(['auth', 'verified'])->name('promocoes.destroy');
+Route::get('/promocoes/{promocao}', [PromocaoController::class, 'show'])->middleware(['auth', 'verified'])->name('promocoes.show');
+Route::get('/promocoes/{promocao}/edit', [PromocaoController::class, 'edit'])->middleware(['auth', 'verified'])->name('promocoes.edit');
+Route::put('/promocoes/{promocao}', [PromocaoController::class, 'update'])->middleware(['auth', 'verified'])->name('promocoes.update');
+Route::delete('/promocoes/{promocao}', [PromocaoController::class, 'destroy'])->middleware(['auth', 'verified'])->name('promocoes.destroy');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
