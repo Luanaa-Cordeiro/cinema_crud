@@ -12,6 +12,12 @@
                 </div>
 
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('filmes.index')" :active="request()->routeIs('filme')" style="color:white;">
+                        {{ __('Filmes') }}
+                    </x-nav-link>
+                </div>
+
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="route('comidas.index')" :active="request()->routeIs('comida')" style="color:white;">
                         {{ __('Comidas') }}
                     </x-nav-link>

@@ -40,7 +40,7 @@ class PromocaoController extends Controller
         ]);
 
         if($created){
-           return redirect()->route('promocoes.index')->with('message', 'Gênero "' . $created->nome  . '" criado com sucesso');
+           return redirect()->route('promocoes.index')->with('message', 'Promoção "' . $created->disponiveis  . '" criada com sucesso');
         }
 
         return redirect()->route('promocoes.index')->with('message','Erro ao criar');
