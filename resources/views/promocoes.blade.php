@@ -76,6 +76,9 @@ font-weight:700;
             <tr>
                 <th scope="col" class="px-6 py-3"style="background-color:#590202; color:white;">Id</th>
                 <th scope="col" class="px-6 py-3"style="background-color:#590202; color:white;">Nome</th>
+                <th scope="col" class="px-6 py-3"style="background-color:#590202; color:white;">Valor Atual</th>
+                <th scope="col" class="px-6 py-3"style="background-color:#590202; color:white;">Valor Promoção</th>
+                <th scope="col" class="px-6 py-3"style="background-color:#590202; color:white;">Válido Até</th>
                 <th scope="col" class="px-6 py-3" style="background-color:#590202; color:white;" id='ação'>Ações</th>
             </tr>
         </thead>
@@ -87,6 +90,12 @@ font-weight:700;
                 </td>
                 <td class="px-6 py-4">
                 {{$promocao->disponiveis}}
+                </td>
+                <td class="px-6 py-4">
+                {{$promocao->atual}}
+                </td>
+                <td class="px-6 py-4">
+                {{$promocao->valor_promocao}}
                 </td>
                 <td id='botões' class="px-6 py-4">
                 <a href="{{ route('promocoes.edit', ['promocao' => $promocao->id]) }}"><button id="editar">Editar</button></a>

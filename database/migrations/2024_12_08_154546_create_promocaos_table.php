@@ -14,6 +14,8 @@ return new class extends Migration
         Schema::create('promocaos', function (Blueprint $table) {
             $table->id();
             $table->string('disponiveis');
+            $table->float('valor_atual');
+            $table->float('valor_promocao');
             $table->timestamps();
         });
     }
