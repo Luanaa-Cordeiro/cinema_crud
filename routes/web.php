@@ -11,6 +11,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+//filmes
+Route::get('/filmes', [FilmeController::class, 'index'])->middleware(['auth', 'verified'])->name('filmes.index');
+Route::get('/filmes/create', [FilmeController::class, 'create'])->middleware(['auth', 'verified'])->name('filmes.create');
+Route::post('/filmes', [FilmeController::class, 'store'])->middleware(['auth', 'verified'])->name('filmes.store');
+Route::get('/filmes/{filme}', [FilmeController::class, 'show'])->middleware(['auth', 'verified'])->name('filmes.show');
+Route::get('/filmes/{filme}/edit', [FilmeController::class, 'edit'])->middleware(['auth', 'verified'])->name('filmes.edit');
+Route::put('/filmes/{filme}', [FilmeController::class, 'update'])->middleware(['auth', 'verified'])->name('filmes.update');
+Route::delete('/filmes/{filme}', [FilmeController::class, 'destroy'])->middleware(['auth', 'verified'])->name('filmes.destroy');
+
 //comidas
 Route::get('/comidas', [ComidaController::class, 'index'])->middleware(['auth', 'verified'])->name('comidas.index');
 Route::get('/comidas/create', [ComidaController::class, 'create'])->middleware(['auth', 'verified'])->name('comidas.create');
