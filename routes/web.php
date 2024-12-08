@@ -29,14 +29,14 @@ Route::get('/generos/{genero}/edit', [GeneroController::class, 'edit'])->middlew
 Route::put('/generos/{genero}', [GeneroController::class, 'update'])->middleware(['auth', 'verified'])->name('generos.update');
 Route::delete('/generos/{genero}', [GeneroController::class, 'destroy'])->middleware(['auth', 'verified'])->name('generos.destroy');
 
-//promoção
-Route::get('/promocao', [GeneroController::class, 'index'])->middleware(['auth', 'verified'])->name('promocao.index');
-Route::get('/promocao/create', [GeneroController::class, 'create'])->middleware(['auth', 'verified'])->name('promocao.create');
-Route::post('/promocaos', [GeneroController::class, 'store'])->middleware(['auth', 'verified'])->name('promocao.store');
-Route::get('/promocao/{genero}', [GeneroController::class, 'show'])->middleware(['auth', 'verified'])->name('promocao.show');
-Route::get('/promocao/{genero}/edit', [GeneroController::class, 'edit'])->middleware(['auth', 'verified'])->name('promocao.edit');
-Route::put('/promocao/{genero}', [GeneroController::class, 'update'])->middleware(['auth', 'verified'])->name('promocao.update');
-Route::delete('/promocao/{genero}', [GeneroController::class, 'destroy'])->middleware(['auth', 'verified'])->name('promocao.destroy');
+//promoções
+Route::get('/promocoes', [GeneroController::class, 'index'])->middleware(['auth', 'verified'])->name('promocoes.index');
+Route::get('/promocoes/create', [GeneroController::class, 'create'])->middleware(['auth', 'verified'])->name('promocoes.create');
+Route::post('/promocoes', [GeneroController::class, 'store'])->middleware(['auth', 'verified'])->name('promocoes.store');
+Route::get('/promocoes/{genero}', [GeneroController::class, 'show'])->middleware(['auth', 'verified'])->name('promocoes.show');
+Route::get('/promocoes/{genero}/edit', [GeneroController::class, 'edit'])->middleware(['auth', 'verified'])->name('promocoes.edit');
+Route::put('/promocoes/{genero}', [GeneroController::class, 'update'])->middleware(['auth', 'verified'])->name('promocoes.update');
+Route::delete('/promocoes/{genero}', [GeneroController::class, 'destroy'])->middleware(['auth', 'verified'])->name('promocoes.destroy');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
