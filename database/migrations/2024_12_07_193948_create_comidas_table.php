@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('comidas', function (Blueprint $table) {
             $table->id();
             $table->string('nome');
+            $table->float('quantidade', 3, 0);
             $table->timestamps();
         });
     }

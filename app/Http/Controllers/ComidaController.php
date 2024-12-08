@@ -37,6 +37,7 @@ class ComidaController extends Controller
     {
         $created = $this->comida->create([
             'nome' => $request->input('nome'), 
+            'quantidade' => $request->input('quantidade'), 
         ]);
 
         if($created){

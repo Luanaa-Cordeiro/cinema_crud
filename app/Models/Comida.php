@@ -9,5 +9,6 @@ class Comida extends Model
 
     protected $fillable = [
         'nome',
+        'quantidade'
     ];
 }

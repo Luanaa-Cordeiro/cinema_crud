@@ -76,9 +76,8 @@ font-weight:700;
             <tr>
                 <th scope="col" class="px-6 py-3"style="background-color:#590202; color:white;">Id</th>
                 <th scope="col" class="px-6 py-3"style="background-color:#590202; color:white;">Nome</th>
-                <th scope="col" class="px-6 py-3" style="background-color:#590202; color:white;" id='ação'>Ações</th>
-
-                
+                <th scope="col" class="px-6 py-3"style="background-color:#590202; color:white;">Quantidade</th>
+                <th scope="col" class="px-6 py-3" style="background-color:#590202; color:white;" id='ação'>Ações</th>   
             </tr>
         </thead>
         <tbody>
@@ -89,6 +88,9 @@ font-weight:700;
                 </td>
                 <td class="px-6 py-4">
                 {{$comida->nome}}
+                </td>
+                <td class="px-6 py-4">
+                {{$comida->quantidade}}
                 </td>
                 <td id='botões' class="px-6 py-4">
                 <a href="{{ route('comidas.edit', ['comida' => $comida->id]) }}"><button id="editar">Editar</button></a>
