@@ -47,6 +47,15 @@ Route::get('/promocoes/{promocao}/edit', [PromocaoController::class, 'edit'])->m
 Route::put('/promocoes/{promocao}', [PromocaoController::class, 'update'])->middleware(['auth', 'verified'])->name('promocoes.update');
 Route::delete('/promocoes/{promocao}', [PromocaoController::class, 'destroy'])->middleware(['auth', 'verified'])->name('promocoes.destroy');
 
+//salas
+Route::get('/salas', [SalaController::class, 'index'])->middleware(['auth', 'verified'])->name('salas.index');
+Route::get('/salas/create', [SalaController::class, 'create'])->middleware(['auth', 'verified'])->name('salas.create');
+Route::post('/salas', [SalaController::class, 'store'])->middleware(['auth', 'verified'])->name('salas.store');
+Route::get('/salas/{sala}', [SalaController::class, 'show'])->middleware(['auth', 'verified'])->name('salas.show');
+Route::get('/salas/{sala}/edit', [SalaController::class, 'edit'])->middleware(['auth', 'verified'])->name('salas.edit');
+Route::put('/salas/{sala}', [SalaController::class, 'update'])->middleware(['auth', 'verified'])->name('salas.update');
+Route::delete('/salas/{sala}', [SalaController::class, 'destroy'])->middleware(['auth', 'verified'])->name('salas.destroy');
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
