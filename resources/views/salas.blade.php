@@ -76,9 +76,7 @@ font-weight:700;
             <tr>
                 <th scope="col" class="px-6 py-3"style="background-color:#590202; color:white;">Id</th>
                 <th scope="col" class="px-6 py-3"style="background-color:#590202; color:white;">Número da sala</th>
-                <th scope="col" class="px-6 py-3"style="background-color:#590202; color:white;">Quantidade</th>
-                <th scope="col" class="px-6 py-3"style="background-color:#590202; color:white;">Valor Promoção</th>
-                <th scope="col" class="px-6 py-3" style="background-color:#590202; color:white;" id='ação'>Ações</th>
+                <th scope="col" class="px-6 py-3"style="background-color:#590202; color:white;">Disponibilidade</th>
             </tr>
         </thead>
         <tbody>
@@ -91,10 +89,7 @@ font-weight:700;
                 {{$sala->disponiveis}}
                 </td>
                 <td class="px-6 py-4">
-                {{$sala->valor_atual}}
-                </td>
-                <td class="px-6 py-4">
-                {{$sala->valor_promocao}}
+                {{$sala->disponiveis}}
                 </td>
                 <td id='botões' class="px-6 py-4">
                 <a href="{{ route('salas.edit', ['sala' => $sala->id]) }}"><button id="editar">Editar</button></a>
