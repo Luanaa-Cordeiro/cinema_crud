@@ -5,6 +5,7 @@ use App\Http\Controllers\FilmeController;
 use App\Http\Controllers\ComidaController;
 use App\Http\Controllers\PromocaoController;
 use App\Http\Controllers\GeneroController;
+use App\Http\Controllers\SalaController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
