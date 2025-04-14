@@ -50,7 +50,7 @@ font-weight:700;
 </style>
 
     <div class="table_itens">
-    <h1>Filmes!</h1>
+    <h1>Filmes</h1>
 <a href="{{route('filmes.create')}}"><button>Adicione aqui</button></a>
 </div>
 
