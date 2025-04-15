@@ -28,10 +28,6 @@
 
 <body class="bg-gray-100">
 
-
-
-
-
   <div class="flex justify-center items-center min-h-screen">
     <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
     <div class="alerta">

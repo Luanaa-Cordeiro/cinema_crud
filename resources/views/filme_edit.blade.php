@@ -33,7 +33,7 @@
     <div class="alerta">
     @if($errors->any())
     @foreach($errors->all() as $error)
-    <div id="alert" class="bg-red-100 border  text-red-700 px-4 py-3 rounded relative" role="alert">
+    <div id="alert" class="bg-red-100 border text-red-700 px-4 py-3 rounded relative" role="alert">
 <span class="block sm:inline"> {{$error}}</span>
 <span class="absolute top-0 bottom-0 right-0 px-4 py-3">
   <svg id="close-alert" class="fill-current h-6 w-6 text-red-500 cursor-pointer" role="button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -51,16 +51,16 @@
         @csrf
         <input type="hidden" name="_method" value="PUT">
         <div class="mb-4">
-          <label for="nome" class="block text-gray-600 font-medium">Nome</label>
+          <label for="nome" class="block text-gray-800 font-medium">Nome</label>
           <input type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" value="{{$filme->nome}}" name="nome"/>
 
-          <label for="nome" class="block text-gray-600 font-medium">Classificação</label>
+          <label for="nome" class="block text-gray-800 font-medium">Classificação</label>
           <input type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" value="{{$filme->classificacao}}" name="classificacao"/>
 
-          <label for="nome" class="block text-gray-600 font-medium">Ano</label>
+          <label for="nome" class="block text-gray-800 font-medium">Ano</label>
           <input type="number" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" value="{{$filme->ano}}" name="ano"/>
 
-          <label for="genero" class="block text-gray-600 font-medium">Gênero</label>
+          <label for="genero" class="block text-gray-800 font-medium">Gênero</label>
           <select class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" name="id_genero" id="genero">
         <option disabled selected hidden>Selecione um Gênero</option>
         @foreach($generos as $genero)

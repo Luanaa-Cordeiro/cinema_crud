@@ -71,7 +71,7 @@ font-weight:700;
 
 <div class="tabela">
 <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-    <table class=" w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+    <table class=" w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-800">
         <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
             <tr>
                 <th scope="col" class="px-6 py-3"style="background-color:#590202; color:white;">Id</th>
@@ -83,7 +83,7 @@ font-weight:700;
         </thead>
         <tbody>
         @foreach($generos as $genero)
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+            <tr class="bg-white white:bg-white-800 white:border-white-700">
                 <td class="px-6 py-4">
                 {{$genero->id}}
                 </td>
