@@ -44,7 +44,7 @@
                 {{ __('Já tem uma conta?') }}
             </a>
 
-            <x-primary-button class="ms-4 bg-red-900">
+            <x-primary-button class="ms-4 bg-red-900 hover:bg-red-600">
                 {{ __('Cadastre-se') }}
             </x-primary-button>
         </div>
