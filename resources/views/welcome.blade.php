@@ -28,13 +28,13 @@
             <div class="card bg-light shadow-lg" style="width: 20rem;">
                 <div class="card-body text-center">
                     <h4 class="card-title">Cinema</h4>
-                    <h6 class="card-subtitle mt-2 mb-2">Bem-vindo!</h6>
-                    <p class="card-subtitle text-muted mb-2">Mantenha seu cinema organizado.</p>
+                    <h6 class="card-subtitle mt-3 mb-3">Bem-vindo!</h6>
+                    <p class="card-subtitle text-muted mb-3">Mantenha seu cinema organizado.</p>
                 
                     <div class="mb-2">
                         <nav class="d-flex flex-column align-items-center">
                             @auth
-                                <a href="{{ url('/dashboard') }}" class="btn btn-custom mb-2">Painel Inicial</a>
+                                <a href="{{ url('/dashboard') }}" class="btn btn-danger mb-1">Painel Inicial</a>
                             @else
                                 <a href="{{ route('login') }}" class="btn btn-danger mb-2">Entrar</a>
                                 @if (Route::has('register'))
