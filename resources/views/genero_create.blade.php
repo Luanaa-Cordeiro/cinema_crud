@@ -45,7 +45,7 @@
       <form action="{{ route('generos.store')}}" method="post">
 @csrf
   <div data-mdb-input-init class="form-outline mb-4">
-    <input value='{{old("nome")}}' type="text" id="form1Example2" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" name="nome" placeholder="Nome" />
+    <input value='{{old("nome")}}' type="text" id="form1Example2" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 white:bg-white-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" name="nome" placeholder="Nome" />
   </div>
 <div id="botao_criar">
   <button data-mdb-ripple-init type="submit" id="criar" class="w-full bg-red-900 text-white py-2 rounded-lg">Criar</button>

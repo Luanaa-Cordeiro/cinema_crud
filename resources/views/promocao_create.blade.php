@@ -42,15 +42,15 @@
 @endif
 </div>
 
-      <h2 class="text-2xl font-semibold text-gray-700 mb-6 text-center">Cadastro de Promoções</h2>
+      <h2 class="text-2xl font-semibold text-gray-800 mb-6 text-center">Cadastro de Promoções</h2>
       <form action="{{ route('promocoes.store')}}" method="post">
 @csrf
   <div data-mdb-input-init class="form-outline mb-4">
-    <input value='{{old("disponiveis")}}' type="text" id="form1Example2" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" name="disponiveis" placeholder="Nome" />
+    <input value='{{old("disponiveis")}}' type="text" id="form1Example2" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 white:bg-white-700 dark:border-gray-600 dark:placeholder-gray-800 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500" name="disponiveis" placeholder="Nome" />
 
-    <input value='{{old("valor_atual")}}' type="text" id="form1Example2" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" name="valor_atual" placeholder="Atual" />
+    <input value='{{old("valor_atual")}}' type="text" id="form1Example2" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 white:bg-white-700 dark:border-gray-600 dark:placeholder-gray-800 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500" name="valor_atual" placeholder="Atual" />
 
-    <input value='{{old("valor_promocao")}}' type="text" id="form1Example2" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" name="valor_promocao" placeholder="Promoção" />
+    <input value='{{old("valor_promocao")}}' type="text" id="form1Example2" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 white:bg-white-700 dark:border-gray-600 dark:placeholder-gray-800 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500" name="valor_promocao" placeholder="Promoção" />
   </div>
 
 <div id="botao_criar">
