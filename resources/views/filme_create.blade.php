@@ -48,7 +48,7 @@
   <div data-mdb-input-init class="form-outline mb-4">
     <input value='{{old("nome")}}' type="text" id="form1Example2" class="bg-gray-50 text-gray-900 text-sm rounded-lg focus:ring-blue-500 block w-full p-2.5 dark:bg-white-700 dark:border-gray-600 dark:placeholder-gray-800 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500" name="nome" placeholder="Nome" />
 
-    <input value='{{old("classificacao")}}' type="text" id="form1Example2" class="bg-gray-50 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white-700 dark:border-gray-600 dark:placeholder-gray-800 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500" name="classificacao" placeholder="Classificação" />
+    <input value='{{old("classificacao")}}' type="number" max="18" min="12" id="form1Example2" class="bg-gray-50 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white-700 dark:border-gray-600 dark:placeholder-gray-800 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500" name="classificacao" placeholder="Classificação" />
 
     <input value='{{old("ano")}}' type="number" id="form1Example2" class="bg-gray-50 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white-700 dark:border-gray-600 dark:placeholder-gray-800 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500" name="ano" placeholder="Ano" />
 
