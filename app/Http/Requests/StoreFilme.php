@@ -23,8 +23,8 @@ class StoreFilme extends FormRequest
     {
         return [
             'nome' => 'required|min:3|max:50', 
-            'classificacao' => 'required|min:1|max:50', 
-            'ano' => 'required|min:4|max:50', 
+            'classificacao' => 'required|min:2|max:2', 
+            'ano' => 'required|min:0|max:4', 
             'id_genero' => 'required', 
         ];
     }
