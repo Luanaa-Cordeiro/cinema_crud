@@ -10,7 +10,7 @@ use App\Http\Requests\StorePromocao;
 class PromocaoController extends Controller
 {
 
-    public readonly Promocao $genero;
+    public readonly Promocao $promocao;
 
     public function __construct() {
         $this->promocao = new Promocao();
@@ -35,6 +35,7 @@ class PromocaoController extends Controller
      */
     public function store(StorePromocao $request)
     {
+
         $created = $this->promocao->create([
             'disponiveis' => $request->input('disponiveis'), 
             'valor_atual' => $request->input('valor_atual'), 

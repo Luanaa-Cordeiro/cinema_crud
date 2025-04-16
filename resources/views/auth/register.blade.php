@@ -45,7 +45,7 @@
             </a>
 
             <x-primary-button class="ms-4 bg-red-900 hover:bg-red-600">
-                {{ __('Entrar') }}
+                {{ __('Cadastrar-se ') }}
             </x-primary-button>
         </div>
     </form>

@@ -94,7 +94,8 @@ font-weight:700;
                 R${{ number_format($promocao->valor_atual, 2, ',', '.') }}
                 </td>
                 <td class="px-6 py-4">
-                R${{ number_format($promocao->valor_promocao, 2, ',', '.') }}                </td>
+                R${{ number_format($promocao->valor_promocao, 2, ',', '.') }}                
+                </td>
                 <td id='botões' class="px-6 py-4">
                 <a href="{{ route('promocoes.edit', ['promocao' => $promocao->id]) }}"><button id="editar">Editar</button></a>
                 <a href="{{route('promocoes.show',['promocao' => $promocao->id])}}"><button id="deletar">Deletar</button></a>
