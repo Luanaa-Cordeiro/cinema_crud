@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
         body {
-            background-color: #ffffff; /* Fundo branco */
+            background-color:rgb(137, 26, 26); /* Fundo branco */
         }
         .card {
             border-radius: 15px;
@@ -27,9 +27,10 @@
         <div class="container-fluid vh-100 d-flex justify-content-center align-items-center">
             <div class="card bg-light shadow-lg" style="width: 20rem;">
                 <div class="card-body text-center">
-                    <h5 class="card-title">Cinema</h5>
-                    <p class="card-subtitle text-muted mb-4">Mantenha seu cinema organizado.</p>
-                    <h6 class="card-subtitle mb-4">Bem-vindo!</h6>
+                    <h4 class="card-title">Cinema</h4>
+                    <h6 class="card-subtitle mt-2 mb-2">Bem-vindo!</h6>
+                    <p class="card-subtitle text-muted mb-2">Mantenha seu cinema organizado.</p>
+                
                     <div class="mb-2">
                         <nav class="d-flex flex-column align-items-center">
                             @auth
