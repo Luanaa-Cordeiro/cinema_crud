@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="app.css">
-    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
     <style>
         .cartoes{
@@ -29,7 +29,6 @@
     
 </body>
 </html>
-
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">

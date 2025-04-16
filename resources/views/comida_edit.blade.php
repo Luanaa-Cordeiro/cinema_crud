@@ -45,16 +45,16 @@
     @endforeach
 @endif
 </div>
-      <h2 class="text-2xl font-semibold text-gray-700 mb-6 text-center">Cadastro de Comidas</h2>
+      <h2 class="text-2xl font-semibold text-gray-800 mb-6 text-center">Cadastro de Comidas</h2>
       <form action="{{route ('comidas.update', ['comida' => $comida->id])}}" method="POST">
         @csrf
         <input type="hidden" name="_method" value="PUT">
         <div class="mb-4">
-          <label for="nome" class="block text-gray-600 font-medium">Nome</label>
-          <input type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" value="{{$comida->nome}}" name="nome"/>
+          <label for="nome" class="block text-gray-800 font-medium">Nome</label>
+          <input type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 white:bg-white-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500" value="{{$comida->nome}}" name="nome"/>
 
-          <label for="nome" class="block text-gray-600 font-medium">Quantidade</label>
-          <input type="number" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" value="{{$comida->quantidade}}" name="quantidade"/>
+          <label for="nome" class="block text-gray-800 font-medium">Quantidade</label>
+          <input type="number" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 white:bg-white-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500" value="{{$comida->quantidade}}" name="quantidade"/>
         </div>
         <div class="mb-4">
         </div>
